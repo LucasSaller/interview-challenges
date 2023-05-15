@@ -9,21 +9,21 @@ describe("transformer", () => {
         nombres: ["Juan", "Pedro", "María"],
         edades: [23, 45, 18],
       })
-    ).toBe([
+    ).toEqual([
       {
-        id: 1,
+        id: "1",
         nombre: "Juan",
-        edad: 23,
+        edad: "23",
       },
       {
-        id: 2,
+        id: "2",
         nombre: "Pedro",
-        edad: 45,
+        edad: "45",
       },
       {
-        id: 3,
+        id: "3",
         nombre: "María",
-        edad: 18,
+        edad: "18",
       },
     ]);
   });
